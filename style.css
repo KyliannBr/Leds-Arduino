@@ -30,18 +30,45 @@ form {
     align-items: stretch;
 }
 
-#box{
-    margin: 50px;
+.colors {
+    display: flex;
+    flex-direction: column;
 }
 
-#b{
-    text-align: center;
-    resize: none;
+
+.colorPicker {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+}
+
+.colorPicker .center {
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.colorPicker button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 999px;
+}
+
+#box{
+    width: 80vw;
+    display: flex;
+    place-content: center;
+    place-items: center;
 }
 
 #block{
-    width: 4vh;
-    height: 4vh;
+    width: 40px;
+    height: 40px;
     float: left;
     border: #fff solid;
 }
@@ -55,10 +82,3 @@ form {
     display: table;
     clear: both;
 }
-
-
-canvas {
-    border: 1px solid black;
-    width: 560px;
-    height: 360px;
-  }
