@@ -74,7 +74,6 @@ form {
 }
 
 #block:hover{
-    background-color: purple;
     transition: all 0s !important;
 }
 

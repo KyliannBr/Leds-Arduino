@@ -35,7 +35,7 @@
             <div class="time">
 
                 <label for="timePicker">Temps de dessin : </label>
-                <input type="number" name="timePicker" id="timePicker" min="10" max="100">
+                <input type="number" name="timePicker" id="timePicker" min="5" max="100">
 
             </div>
             <h3>Couleurs</h3>
