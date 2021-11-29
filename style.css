@@ -70,7 +70,7 @@ form {
     width: 40px;
     height: 40px;
     float: left;
-    border: #fff solid;
+    border: #fff solid 1px;
 }
 
 #block:hover{

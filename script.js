@@ -1,5 +1,7 @@
 // Selection des couleurs
 let colorPicker = document.getElementById("colorPicker");
+// Suppression visuel des couleurs du formulaire
+colorPicker.style.display = "none";
 
 // Grille Visible ou non 
 let viewBox = document.getElementById("viewBox");
@@ -23,9 +25,15 @@ color1Button.style.backgroundColor = color1;
 color2Button.style.backgroundColor = color2;
 color3Button.style.backgroundColor = color3;
 
-// Suppression visuel des couleurs du formulaire
-colorPicker.style.display = "none";
+// Ajout d'ecouteurs sur chaques boutons de couleurs
+color1Button.addEventListener("click", color1Select, false);
+color2Button.addEventListener("click", color2Select, false);
+color3Button.addEventListener("click", color3Select, false);
 
+let colorSelected = document.getElementById("colorSelected");
+let colorSelectedString = colorSelected.textContent;  
+
+let colorButtonInt = 0;
 
 // Fonction pour la création automatique de la grille
 function createBlocks() {
@@ -35,11 +43,6 @@ function createBlocks() {
             b.id = "block";                            // Identification de chaques div avec l'id "block" 
             b.setAttribute("posX", x);                // Position x de chaques blocks dans un attribut
             b.setAttribute("posY", y);               // Position y de chaques blocks dans un attribut
-
-            if (x == 0)                         
-                b.style.backgroundColor = "green";     // Colorisation de chaques premiers blocks d'une ligne 
-            else if (x == 31)
-                b.style.backgroundColor = "red";       // Colorisation de chaques derniers blocks d'une ligne 
 
             document.getElementById("b").appendChild(b);
         }
@@ -72,28 +75,59 @@ if (timeSet != 0) {     // Si le temps de dessin est défini alors :
 }
 
 
-
-
-
-
 // Quand la souris passe sur un block, le block change de couleur
 
 let isMouseHover = false;
 
-for (i = 0; i < block.length; i++) {
+function Coloriage() {
+    for (i = 0; i < block.length; i++) {
 
-    let blocks = document.querySelectorAll("#block");
-
-    blocks[i].addEventListener("mouseleave", function (event) {
-        isMouseHover = false
-        event.target.style.backgroundColor = "transparent"
-        console.log(isMouseHover)
-    }, false);
-    blocks[i].addEventListener("mouseover", function (event) {
-        isMouseHover = true
-        event.target.style.backgroundColor = color1;
-        console.log(isMouseHover)
-    }, false);
-
+        let blocks = document.querySelectorAll("#block");
+    
+        blocks[i].addEventListener("mouseleave", function (event) {
+            isMouseHover = false
+            event.target.style.backgroundColor = "transparent"
+        }, false);
+    
+        if (colorButtonInt == 0) {
+            blocks[i].addEventListener("mouseover", function (event) {
+                isMouseHover = true;
+                event.target.style.backgroundColor = color1;
+            }, false);
+        } else if (colorButtonInt == 1) {
+            blocks[i].addEventListener("mouseover", function (event) {
+                isMouseHover = true;
+                event.target.style.backgroundColor = color1;
+            }, false);
+        } else if (colorButtonInt == 2) {
+            blocks[i].addEventListener("mouseover", function (event) {
+                isMouseHover = true;
+                event.target.style.backgroundColor = color2;
+            }, false);
+        } else if (colorButtonInt == 3) {
+            blocks[i].addEventListener("mouseover", function (event) {
+                isMouseHover = true;
+                event.target.style.backgroundColor = color3;
+            }, false);
+        } 
+    }
+    setTimeout(Coloriage, 100);
 }
 
+
+function color1Select() {
+    colorButtonInt = 1;
+    console.log(colorButtonInt);
+}
+function color2Select() {
+    colorButtonInt = 2;
+    console.log(colorButtonInt);
+}
+function color3Select() {
+    colorButtonInt = 3;
+    console.log(colorButtonInt);
+}
+
+
+
+Coloriage();

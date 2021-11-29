@@ -35,14 +35,14 @@
             <div class="time">
 
                 <label for="timePicker">Temps de dessin : </label>
-                <input type="number" name="timePicker" id="timePicker" min="5" max="100">
+                <input type="number" name="timePicker" id="timePicker" min="5" max="100" require>
 
             </div>
             <h3>Couleurs</h3>
             <div class="colors">
                 <div>
                     <label for="color1">selectionner une couleur</label>
-                    <input type="color" name="color1" id="color1">
+                    <input type="color" name="color1" id="color1" require>
                 </div>
                 <div>
                     <label for="color2">selectionner une couleur</label>
@@ -73,6 +73,9 @@
     <p id="color1Set"><?php echo ($color1); ?></p>
     <p id="color2Set"><?php echo ($color2); ?></p>
     <p id="color3Set"><?php echo ($color3); ?></p>
+    <p id="colorSelected"></p>
+
+    <p id="dateheure"></p>
 
     <div id="box">
         <div id="b"></div>
