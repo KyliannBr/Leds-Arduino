@@ -66,7 +66,13 @@
         </div>
     </div>
 
-    
+    <div class="dessinModels" id="dessinModels">
+        <div class="center">
+            <button value="model1" name="model1" id="model1">Model 1</button>
+            <button value="model2" name="model2" id="model2">Model 2</button>
+            <button value="model3" name="model3" id="model3">Model 3</button>
+        </div>
+    </div>
 
     <p id="viewBox"><?php echo ($viewBox); ?></p>
     <p id="timeSet"><?php echo ($timePicker); ?></p>

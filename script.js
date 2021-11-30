@@ -3,6 +3,11 @@ let colorPicker = document.getElementById("colorPicker");
 // Suppression visuel des couleurs du formulaire
 colorPicker.style.display = "none";
 
+// Selection des models
+let dessinModels = document.getElementById("dessinModels");
+// Suppression visuel des models
+dessinModels.style.display = "none";
+
 // Grille Visible ou non 
 let viewBox = document.getElementById("viewBox");
 
@@ -61,12 +66,15 @@ if (timeSet != 0) {     // Si le temps de dessin est défini alors :
     let formulaire = document.getElementById("formulaire");
     // Selection des boutons de couleurs 
     let colorPicker = document.getElementById("colorPicker");
+    let dessinModels = document.getElementById("dessinModels");
 
     // Suppression visuelle du formulaire
     formulaire.style.display = "none";
 
     // Affichage des boutons de couleur
     colorPicker.style.display = "flex";
+
+    dessinModels.style.display = "flex";
 
     // Définition duu temps d'affichage du dessin pour chaques blocks
     for (i = 0; i < block.length; i++) {

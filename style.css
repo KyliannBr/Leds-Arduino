@@ -36,7 +36,7 @@ form {
 }
 
 
-.colorPicker {
+.colorPicker, .dessinModels {
     width: 100%;
     height: auto;
 
@@ -44,9 +44,11 @@ form {
     flex-direction: row;
     place-content: center;
     place-items: center;
+
+    margin: 10px 0;
 }
 
-.colorPicker .center {
+.colorPicker .center, .dessinModels .center {
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
@@ -57,6 +59,16 @@ form {
     height: 40px;
     border: 2px solid #fff;
     border-radius: 999px;
+}
+
+.dessinModels button {
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    background-color: #2b3738;
+    border: 2px solid #f3f3f3;
+    border-radius: 999px;
+    color: #ffffff;
 }
 
 #box{
