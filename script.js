@@ -26,6 +26,10 @@ let color1Button = document.getElementById("color1Button");
 let color2Button = document.getElementById("color2Button");
 let color3Button = document.getElementById("color3Button");
 
+let model1Button = document.getElementById("model1");
+let model2Button = document.getElementById("model2");
+let model3Button = document.getElementById("model3");
+
 color1Button.style.backgroundColor = color1;
 color2Button.style.backgroundColor = color2;
 color3Button.style.backgroundColor = color3;
@@ -34,6 +38,10 @@ color3Button.style.backgroundColor = color3;
 color1Button.addEventListener("click", color1Select, false);
 color2Button.addEventListener("click", color2Select, false);
 color3Button.addEventListener("click", color3Select, false);
+
+model1Button.addEventListener("click", model1, false);
+model2Button.addEventListener("click", model2, false);
+model3Button.addEventListener("click", model3, false);
 
 let colorSelected = document.getElementById("colorSelected");
 let colorSelectedString = colorSelected.textContent;  
@@ -136,6 +144,478 @@ function color3Select() {
     console.log(colorButtonInt);
 }
 
+
+function model1() {
+    let blocks = document.querySelectorAll("#block");
+
+    blocks.forEach(element => {
+        // line0 
+
+            if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 13) {
+            element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 14) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 15) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 18) {
+            element.style.backgroundColor = color1;
+            }
+
+        // line 1 
+            
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 14) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 15) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 18) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 19) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 20) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 2 
+
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 14) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 15) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 18) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 19) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 20) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 21) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 3
+
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 18) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 19) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 22) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 4
+
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 18) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 19) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 22) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 5
+
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 8) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 14) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 15) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 18) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 19) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 23) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 6
+
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 8) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 14) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 15) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 18) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 23) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 7
+
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 8) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 14) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 15) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 23) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 8
+
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 8) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 14) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 15) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 23) {
+                element.style.backgroundColor = color1;
+            }
+            
+        // line 9
+
+            if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 8) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 23) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 10
+
+            if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 8) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 23) {
+                element.style.backgroundColor = color1;
+            }
+            
+        // line 11
+
+            if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 22) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 12
+
+            if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 9) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 21) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 22) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 13
+
+            if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 10) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 20) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 21) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 14
+
+            if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 11) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 12) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 14) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 19) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 20) {
+                element.style.backgroundColor = color1;
+            }
+
+        // line 1
+
+            
+            if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 13) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 14) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 15) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 16) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 17) {
+                element.style.backgroundColor = color1;
+            }
+            if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 18) {
+                element.style.backgroundColor = color1;
+            }
+
+
+    });
+
+    
+}
+
+
+function model2() {
+    
+}
+function model3() {
+
+}
 
 
 Coloriage();
