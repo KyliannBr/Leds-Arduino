@@ -29,6 +29,7 @@ let color3Button = document.getElementById("color3Button");
 let model1Button = document.getElementById("model1");
 let model2Button = document.getElementById("model2");
 let model3Button = document.getElementById("model3");
+let resetButton = document.getElementById("reset");
 
 color1Button.style.backgroundColor = color1;
 color2Button.style.backgroundColor = color2;
@@ -42,6 +43,7 @@ color3Button.addEventListener("click", color3Select, false);
 model1Button.addEventListener("click", model1, false);
 model2Button.addEventListener("click", model2, false);
 model3Button.addEventListener("click", model3, false);
+resetButton.addEventListener("click", reset, false);
 
 let colorSelected = document.getElementById("colorSelected");
 let colorSelectedString = colorSelected.textContent;  
@@ -147,460 +149,471 @@ function color3Select() {
 
 function model1() {
     let blocks = document.querySelectorAll("#block");
+    let colorSelectForModel = 0; 
+
+    if(colorButtonInt == 0) {
+        colorSelectForModel = color1;
+    } else if(colorButtonInt == 1) {
+        colorSelectForModel = color1;
+    } else if(colorButtonInt == 2) {
+        colorSelectForModel = color2;
+    } else if (colorButtonInt == 3) {
+        colorSelectForModel = color3;
+    }
 
     blocks.forEach(element => {
         // line0 
 
             if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 13) {
-            element.style.backgroundColor = color1;
+            element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 14) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 15) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 0 && element.getAttribute("posx") == 18) {
-            element.style.backgroundColor = color1;
+            element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 1 
             
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 14) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 15) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 18) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 19) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 1 && element.getAttribute("posx") == 20) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 2 
 
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 14) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 15) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 18) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 19) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 20) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 2 && element.getAttribute("posx") == 21) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 3
 
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 18) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 19) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 3 && element.getAttribute("posx") == 22) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 4
 
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 18) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 19) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 4 && element.getAttribute("posx") == 22) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 5
 
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 8) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 14) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 15) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 18) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 19) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 5 && element.getAttribute("posx") == 23) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 6
 
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 8) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 14) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 15) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 18) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 6 && element.getAttribute("posx") == 23) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 7
 
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 8) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 14) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 15) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 7 && element.getAttribute("posx") == 23) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 8
 
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 8) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 14) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 15) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 8 && element.getAttribute("posx") == 23) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             
         // line 9
 
             if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 8) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 9 && element.getAttribute("posx") == 23) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 10
 
             if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 8) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 10 && element.getAttribute("posx") == 23) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             
         // line 11
 
             if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 11 && element.getAttribute("posx") == 22) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 12
 
             if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 9) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 21) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 12 && element.getAttribute("posx") == 22) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 13
 
             if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 10) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 20) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 13 && element.getAttribute("posx") == 21) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 14
 
             if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 11) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 12) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 14) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 19) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 14 && element.getAttribute("posx") == 20) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
         // line 1
 
             
             if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 13) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 14) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 15) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 16) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 17) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
             if(element.getAttribute("posy") == 15 && element.getAttribute("posx") == 18) {
-                element.style.backgroundColor = color1;
+                element.style.backgroundColor = colorSelectForModel;
             }
 
 
@@ -615,6 +628,10 @@ function model2() {
 }
 function model3() {
 
+}
+
+function reset() {
+    location.reload();
 }
 
 
